@@ -99,7 +99,7 @@ This endpoint attempts to create a user. If the user already exists, it gets it 
 
 `POST http://127.0.0.1/user`
 
-### URL Parameters
+### BODY Parameters
 
 Parameter | Description
 --------- | -----------
