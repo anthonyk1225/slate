@@ -1,6 +1,6 @@
 # Errors
 
-<aside class="notice">Errors you may run in to.</aside>
+<aside class="notice">Meanings of 400 & 500 error codes</aside>
 
 
 Error Code | Meaning
