@@ -15,7 +15,7 @@ search: true
 
 # Introduction
 
-Welcome to the create-node-app API! You can access endpoints, which get information on various users in our database.
+Welcome to the create-node-app API!
 
 You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -30,8 +30,8 @@ This API documentation page was created with [Slate](https://github.com/lord/sla
       url: some-url,
       headers: {
           ...
-          'x-token': meowmeowmeow,
-          'x-user-id': woofwoof,
+          'x-token': "meowmeowmeow",
+          'x-user-id': "woofwoof",
       }
   })
 ```
@@ -44,7 +44,9 @@ We expect these two things so that we can verify that it's actually you.
 
 `x-token: "meowmeowmeow", x-user-id: "woofwoof"`
 
-<aside class="notice">
+You can get x-user-id from all 3 users endpoints. You can get the x-token from the `/users/login` endpoint.
+
+<aside class="warning">
 You must replace <code>meowmeowmeow & woofwoof</code> with your personal token and id.
 </aside>
 
@@ -101,10 +103,39 @@ This endpoint gets your user details
 `GET http://127.0.0.1/user`
 
 <aside class="notice">
-Custom headers required 
+Headers required 
 </aside>
 
 ## Log In
 
-Coming Soon. This will contain the token that you need.
+> An example POST request will have a payload that looks like
+
+```javascript
+{
+    "email": "jdoe@us.company.com",
+    "password": "password"
+}
+```
+
+> Success response
+
+```json
+{
+  "id": 2,
+  "first_name": "john",
+  "last_name": "doe",
+  "email": "jdoe@123.com",
+  "token": "some-token"
+}
+```
+
+This endpoint gets your user details
+
+### HTTP Request
+
+`POST http://127.0.0.1/user/login`
+
+<aside class="success">
+Get you x-token here.
+</aside>
 

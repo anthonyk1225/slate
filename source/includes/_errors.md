@@ -1,6 +1,6 @@
 # Errors
 
-<aside class="notice">Meanings of 400 & 500 error codes</aside>
+<aside class="notice">400 & 500 error status codes</aside>
 
 
 Error Code | Meaning
