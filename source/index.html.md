@@ -137,6 +137,6 @@ This endpoint gets your user details
 `POST http://127.0.0.1/user/login`
 
 <aside class="success">
-Get you x-token here.
+Get your x-token here.
 </aside>
 
